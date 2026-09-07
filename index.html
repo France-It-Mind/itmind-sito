@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Il Mio Sito — Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Sito moderno e minimal costruito con HTML/CSS puro." />
 </head>
 <body>
   <header class="navbar">
@@ -23,18 +27,22 @@
     <section id="hero" class="hero">
       <div class="container hero-inner">
         <span class="tag">Benvenuto</span>
-        <h1 class="hero-title">Ciao, sono Francesco</h1>
+        <h1 class="hero-title">Ciao, sono <span class="highlight">Francesco</span></h1>
         <p class="hero-sub">Creo siti puliti e moderni, senza complicazioni.</p>
-        <a href="#servizi" class="btn">Scopri i servizi</a>
+        <div class="hero-actions">
+          <a href="#servizi" class="btn btn-primary">Scopri i servizi</a>
+          <a href="#contatti" class="btn btn-ghost">Contattami</a>
+        </div>
       </div>
     </section>
 
     <!-- Chi siamo -->
     <section id="chi-siamo" class="section">
       <div class="container">
-        <h2 class="section-title">Chi siamo</h2>
+        <span class="section-sub">Chi siamo</span>
+        <h2 class="section-title">Semplicità prima di tutto</h2>
         <p class="section-text">
-          Siamo un piccolo team focalizzato sulla semplicità.
+          Siamo un piccolo team focalizzato sulla chiarezza.
           Crediamo che un sito non deve essere complesso per essere efficace.
         </p>
       </div>
@@ -43,17 +51,21 @@
     <!-- Servizi -->
     <section id="servizi" class="section-alt">
       <div class="container">
+        <span class="section-sub">Cosa facciamo</span>
         <h2 class="section-title">Servizi</h2>
         <div class="services-grid">
           <div class="service-card">
+            <div class="service-icon">⚡</div>
             <h3 class="service-title">Web Design</h3>
             <p class="service-desc">Siti moderni, leggeri e facili da navigare.</p>
           </div>
           <div class="service-card">
+            <div class="service-icon">🔧</div>
             <h3 class="service-title">Manutenzione</h3>
             <p class="service-desc">Aggiornamenti, correzioni e piccoli miglioramenti.</p>
           </div>
           <div class="service-card">
+            <div class="service-icon">💡</div>
             <h3 class="service-title">Consulenza</h3>
             <p class="service-desc">Aiuto per iniziare e scegliere la strada giusta.</p>
           </div>
@@ -64,7 +76,8 @@
     <!-- Contatti -->
     <section id="contatti" class="section">
       <div class="container contact-box">
-        <h2 class="section-title">Contattami</h2>
+        <span class="section-sub">Contattami</span>
+        <h2 class="section-title">Scrivimi</h2>
         <form class="contact-form" action="#" method="post">
           <div class="field">
             <label for="nome">Nome</label>
@@ -78,15 +91,23 @@
             <label for="messaggio">Messaggio</label>
             <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn">Invia messaggio</button>
+          <button type="submit" class="btn btn-primary">Invia messaggio</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; Il Mio Sito — Realizzato semplicemente.</p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">Il Mio Sito</span>
+        <p class="footer-note">Realizzato semplicemente.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti">Contatti</a>
+      </div>
     </div>
   </footer>
 </body>
