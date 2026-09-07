@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Il Mio Sito — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">Il Mio Sito</a>
+      <nav class="nav-links">
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <span class="tag">Benvenuto</span>
+        <h1 class="hero-title">Ciao, sono Francesco</h1>
+        <p class="hero-sub">Creo siti puliti e moderni, senza complicazioni.</p>
+        <a href="#servizi" class="btn">Scopri i servizi</a>
+      </div>
+    </section>
+
+    <!-- Chi siamo -->
+    <section id="chi-siamo" class="section">
+      <div class="container">
+        <h2 class="section-title">Chi siamo</h2>
+        <p class="section-text">
+          Siamo un piccolo team focalizzato sulla semplicità.
+          Crediamo che un sito non deve essere complesso per essere efficace.
+        </p>
+      </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="servizi" class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Servizi</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 class="service-title">Web Design</h3>
+            <p class="service-desc">Siti moderni, leggeri e facili da navigare.</p>
+          </div>
+          <div class="service-card">
+            <h3 class="service-title">Manutenzione</h3>
+            <p class="service-desc">Aggiornamenti, correzioni e piccoli miglioramenti.</p>
+          </div>
+          <div class="service-card">
+            <h3 class="service-title">Consulenza</h3>
+            <p class="service-desc">Aiuto per iniziare e scegliere la strada giusta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti" class="section">
+      <div class="container contact-box">
+        <h2 class="section-title">Contattami</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Invia messaggio</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Il Mio Sito — Realizzato semplicemente.</p>
+    </div>
+  </footer>
+</body>
+</html>
