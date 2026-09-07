@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Il Mio Sito — Home</title>
+  <title>ITMind — Assistenza Informatica a Cambiago e Provincia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Sito moderno e minimal costruito con HTML/CSS puro." />
+  <meta name="description" content="Assistenza informatica rapida e professionale a domicilio e da remoto per aziende e privati a Cambiago e provincia." />
 </head>
 <body>
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="#hero" class="logo">Il Mio Sito</a>
+      <a href="index.html" class="logo">ITMind</a>
       <nav class="nav-links">
-        <a href="#chi-siamo">Chi siamo</a>
         <a href="#servizi">Servizi</a>
+        <a href="#chi-siamo">Chi siamo</a>
         <a href="#contatti">Contatti</a>
       </nav>
     </div>
@@ -30,46 +30,84 @@
         <h1 class="hero-title">Assistenza informatica</h1>
         <p class="hero-sub">Rapida e professionale a domicilio e da remoto per aziende e privati a Cambiago e provincia.</p>
         <div class="hero-actions">
-          <a href="https://wa.me/393319115668?text=Buongiorno,%20vorrei%20richiedere%20un%27assistenza%20informatica%20a%20domicilio%20o%20da%20remoto.%20A%20Cambiago%20e%20provincia.%20Grazie." class="btn btn-primary" target="_blank" rel="noopener">Richiedi Assistenza Immediata</a>
+          <a href="https://wa.me/393319115668?text=Buongiorno,%20vorrei%20richiedere%20un%27assistenza%20informatica%20a%20domicilio%20o%20da%20remoto.%20A%20Cambiago%20e%20provincia.%20Grazie." class="btn btn-primary btn-lg" target="_blank" rel="noopener">Richiedi Assistenza Immediata</a>
           <a href="#servizi" class="btn btn-ghost">Scopri i Servizi</a>
         </div>
       </div>
     </section>
 
-    <!-- Chi siamo -->
-    <section id="chi-siamo" class="section">
-      <div class="container">
-        <span class="section-sub">Chi siamo</span>
-        <h2 class="section-title">Semplicità prima di tutto</h2>
-        <p class="section-text">
-          Siamo un piccolo team focalizzato sulla chiarezza.
-          Crediamo che un sito non deve essere complesso per essere efficace.
-        </p>
+    <!-- Contatti rapidi -->
+    <section class="quick-contacts">
+      <div class="container quick-contacts-inner">
+        <div class="quick-item">
+          <span class="quick-label">Telefono / WhatsApp</span>
+          <a href="tel:+393319115668" class="quick-link">+39 331 9115668</a>
+        </div>
+        <div class="quick-item">
+          <span class="quick-label">Email</span>
+          <a href="mailto:info@itmind.it" class="quick-link">info@itmind.it</a>
+        </div>
+        <div class="quick-item">
+          <span class="quick-label">Operatività</span>
+          <span class="quick-value">Disponibile urgente</span>
+        </div>
       </div>
     </section>
 
     <!-- Servizi -->
     <section id="servizi" class="section-alt">
       <div class="container">
-        <span class="section-sub">Cosa facciamo</span>
-        <h2 class="section-title">Servizi</h2>
+        <span class="section-sub">Servizi</span>
+        <h2 class="section-title">Cosa facciamo</h2>
         <div class="services-grid">
           <div class="service-card">
-            <a href="web-design.html" class="service-card-link">
-              <div class="service-icon">⚡</div>
-              <h3 class="service-title">Web Design</h3>
-              <p class="service-desc">Siti moderni, leggeri e facili da navigare.</p>
-            </a>
+            <div class="service-icon">⚡</div>
+            <h3 class="service-title">Web Design</h3>
+            <p class="service-desc">Siti moderni, leggeri e facili da navigare.</p>
+            <a href="web-design.html" class="service-link">Scopri →</a>
           </div>
           <div class="service-card">
             <div class="service-icon">🔧</div>
             <h3 class="service-title">Manutenzione</h3>
-            <p class="service-desc">resa delle reti stabili, backup automatizzati contro i ramsonware</p>
+            <p class="service-desc">Rea delle reti stabili, backup automatizzati contro i ramsonware.</p>
+            <a href="#contatti" class="service-link">Richiedi →</a>
           </div>
           <div class="service-card">
             <div class="service-icon">💡</div>
             <h3 class="service-title">Consulenza</h3>
             <p class="service-desc">Aiuto per iniziare e scegliere la strada giusta.</p>
+            <a href="#contatti" class="service-link">Richiedi →</a>
+          </div>
+        </div>
+        <p class="section-note">Sono disponibili servizi aggiuntivi su richiesta. Contattami per un preventivo personalizzato.</p>
+      </div>
+    </section>
+
+    <!-- Perché sceglierci -->
+    <section id="chi-siamo" class="section">
+      <div class="container">
+        <span class="section-sub">Chi siamo</span>
+        <h2 class="section-title">Perché sceglierci</h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <span class="why-icon">📍</span>
+            <h3 class="why-title">Lokal</h3>
+            <p class="why-desc">Operiamo a Cambiago e provincia, con disponibilità di intervento rapido.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">⚡</span>
+            <h3 class="why-title">Rapido</h3>
+            <p class="why-desc">Interventi urgenti e non. Rispondo in breve tempo anche su WhatsApp.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">🛡️</span>
+            <h3 class="why-title">Sicuro</h3>
+            <p class="why-desc">Backup automatizzati e reti stabili contro i ramsonware.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-icon">💬</span>
+            <h3 class="why-title">Semplice</h3>
+            <p class="why-desc">Niente tecniche complicate: spiego tutto in modo chiaro e pratico.</p>
           </div>
         </div>
       </div>
@@ -77,24 +115,38 @@
 
     <!-- Contatti -->
     <section id="contatti" class="section">
-      <div class="container contact-box">
-        <span class="section-sub">Contattami</span>
-        <h2 class="section-title">Scrivimi</h2>
-        <form class="contact-form" action="#" method="post">
-          <div class="field">
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text" required />
+      <div class="container contact-wrap">
+        <div class="contact-main">
+          <span class="section-sub">Contattami</span>
+          <h2 class="section-title">Scrivimi o chiamami</h2>
+          <p class="section-text">Per assistenza urgente, usa WhatsApp. Per informazioni, scrivi o telefona.</p>
+          <div class="contact-methods">
+            <a href="https://wa.me/393319115668?text=Buongiorno,%20vorrei%20richiedere%20un%27assistenza%20informatica." class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="tel:+393319115668" class="btn btn-ghost">Telefono</a>
+            <a href="mailto:info@itmind.it" class="btn btn-ghost">Email</a>
           </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-          <div class="field">
-            <label for="messaggio">Messaggio</label>
-            <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Invia messaggio</button>
-        </form>
+        </div>
+        <div class="contact-form-box">
+          <form class="contact-form" action="#" method="post">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field">
+              <label for="telefono">Numero di telefono (opzionale)</label>
+              <input id="telefono" name="telefono" type="tel" />
+            </div>
+            <div class="field">
+              <label for="messaggio">Messaggio</label>
+              <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Invia messaggio</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -102,14 +154,16 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo">Il Mio Sito</span>
-        <p class="footer-note">Realizzato semplicemente.</p>
+        <span class="logo">ITMind</span>
+        <p class="footer-note">Assistenza informatica a domicilio e da remoto.</p>
       </div>
       <div class="footer-links">
-        <a href="#chi-siamo">Chi siamo</a>
         <a href="#servizi">Servizi</a>
+        <a href="#chi-siamo">Chi siamo</a>
         <a href="#contatti">Contatti</a>
+        <a href="https://wa.me/393319115668" target="_blank" rel="noopener">WhatsApp</a>
       </div>
+      <p class="footer-copy">© ITMind — Cambiago e provincia</p>
     </div>
   </footer>
 </body>
