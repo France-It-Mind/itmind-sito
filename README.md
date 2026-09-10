@@ -13,9 +13,11 @@ Nessuna dipendenza, niente build, gira da solo.
 ## Video animato
 
 È presente un video animato di sottofondo (motion background) nella cartella `public/assets/videos/`:
-- `55683383_MotionElements_radiant-purple-pink-light-burst-hd.webm` — animazione loop, colori viola/rosa, light burst
+- `motion-background.webm` — animazione loop, colori viola/rosa, light burst (3.4 MB)
 
-Il video è usato come decorazione visiva a schermo intero (se integrato nell'HTML con un `<video autoplay muted loop playsinline>`).
+Il video è integrato come decorazione visiva a schermo intero con la classe `.bg-video` (CSS: `position: fixed`, `object-fit: cover`, `z-index: -1`, `opacity: 0.45`). È presente anche un override per `prefers-reduced-motion` che lo nasconde per accessibilità.
+
+Per abilitarlo: assicurati che `public/index.html` includa il tag `<video class="bg-video" autoplay muted loop playsinline>`.
 
 ## Come modificare
 
