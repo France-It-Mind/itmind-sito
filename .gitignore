@@ -5,3 +5,4 @@ messages.json
 .DS_Store
 Thumbs.db
 user.json
+dist/
