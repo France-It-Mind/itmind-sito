@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 // --- Middleware ---
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // --- API: salva messaggio di contatto ---
 app.post('/api/contact', (req, res) => {
